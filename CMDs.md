@@ -31,7 +31,12 @@ ii. to capture error and standard output:
 `${i} &> specifiedLog`
 append rather than overwrite: use `&>>` rather than `&>`
 
+
+
 ## Commands
+`rsync` will transfer files easily across local and network domains.
+try `rsync -av --progress --exclude="node_modules" /home/defithom/dev /media/defithom/2T TOSHI/backups/` to backup
+
 `chmod` will modify permissions on a file or directory.
 We use this to change read/write/execute betweeen owner/group.
 -- seealso: [https://chmod-calculator.com/](CalculatePermissions)

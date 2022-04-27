@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Table, Input, InputNumber, Popconfirm, Form, Typography } from 'antd';
+
 const originData = [];
 
 for (let i = 0; i < 100; i++) {
@@ -135,6 +136,7 @@ const EditableTable = () => {
       },
     },
   ];
+  
   const mergedColumns = columns.map((col) => {
     if (!col.editable) {
       return col;
@@ -151,6 +153,7 @@ const EditableTable = () => {
       }),
     };
   });
+
   return (
     <Form form={form} component={false}>
       <Table
